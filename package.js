@@ -1,8 +1,8 @@
 Package.describe({
   name: 'teknologist:algolia',
   summary: 'Package to handle the blazing fast Algolia search engine (works on client and server)',
-  version: '3.13.0',
-  git: 'https://github.com/acemtp/meteor-algolia.git'
+  version: '3.14.1',
+  git: 'https://github.com/teknologist/meteor-algolia.git'
 });
 
 Package.onUse(function(api) {
@@ -15,5 +15,5 @@ Package.onUse(function(api) {
 });
 
 Npm.depends({
-  'algoliasearch': '3.13.0'
+  'algoliasearch': '3.14.1'
 });
