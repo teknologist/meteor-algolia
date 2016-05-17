@@ -2,11 +2,13 @@
 
 Meteor package to handle the blazing fast [Algolia](http://algolia.com) search engine (working on client and server).
 
+**NOTE: This is a fork of  https://atmospherejs.com/acemtp/algolia to use an up to date version of the algoliasearch client.**
+
 ## Example
 
 ### Server side
 
-    var client = AlgoliaSearch(<algolia_application_id>, <algolia_private_id>);
+    var client = algoliasearch(<algolia_application_id>, <algolia_private_id>, params);
 
     var index = client.initIndex(<algolia_index_name>);
 
@@ -19,7 +21,7 @@ Meteor package to handle the blazing fast [Algolia](http://algolia.com) search e
 
 ### Client side
 
-    var client = AlgoliaSearch(<algolia_application_id>, <algolia_public_id>);
+    var client = algoliasearch(<algolia_application_id>, <algolia_public_id> , params);
 
     var index = client.initIndex(<algolia_index_name>);
 
@@ -43,7 +45,7 @@ Check the [source code](https://github.com/acemtp/meteor-algolia/tree/master/exa
 Read the [official Algolia doc](https://www.algolia.com/doc/node#using-the-api) for the available functions and options.
 
 ### Changelog
-
+- Forked and upgraded algoliasearch to 3.14.1
 - Moved to algolia 3.9.1
 - The global object is now called **AlgoliaSearch** both on client and server
 - Moved to algolia v3+ [check the migration guide](https://github.com/algolia/algoliasearch-client-js/wiki/Migration-guide-from-2.x.x-to-3.x.x)
